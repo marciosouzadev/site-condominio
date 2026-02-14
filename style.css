@@ -306,6 +306,184 @@ body {
   filter: grayscale(0%);
 }
 
+/* TALENTOS */
+.talentos-intro {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+  color: #4b5563;
+  font-size: 1.05rem;
+}
+
+.talentos-intro p {
+  margin-bottom: 15px;
+}
+
+.talentos-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.talento-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0,0,0,0.05);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease;
+}
+
+.talento-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.talento-card:hover {
+  box-shadow: 0 20px 40px -10px rgba(37, 99, 235, 0.15);
+}
+
+.talento-avatar {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.talento-avatar span {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  border: 3px solid rgba(255,255,255,0.3);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.talento-info {
+  padding: 30px;
+  flex: 1;
+}
+
+.talento-badge {
+  display: inline-block;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.talento-info h3 {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.talento-detalhes {
+  list-style: none;
+  margin: 20px 0;
+  padding: 15px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.talento-detalhes li {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.talento-detalhes li:last-child {
+  margin-bottom: 0;
+}
+
+.talento-cta {
+  font-style: italic;
+  color: #4b5563;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 15px;
+}
+
+/* TELEFONES ÚTEIS */
+.telefones-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.phone-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #e5e7eb;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease;
+}
+
+.phone-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.phone-card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.phone-card.emergency {
+  border-top: 4px solid #ef4444;
+}
+
+.phone-card h3 {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+  color: #111827;
+  border-bottom: 2px solid #f3f4f6;
+  padding-bottom: 10px;
+}
+
+.phone-list {
+  list-style: none;
+}
+
+.phone-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f9fafb;
+  font-size: 0.95rem;
+}
+
+.phone-list li:last-child {
+  border-bottom: none;
+}
+
+.phone-list li span {
+  color: #4b5563;
+}
+
+.phone-list li strong {
+  color: #111827;
+  text-align: right;
+  margin-left: 10px;
+}
+
 /* REGRAS */
 .rules {
   display: grid;
@@ -456,8 +634,22 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .talento-card {
+    flex-direction: column;
+  }
+  
   .contact-form {
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .talento-card {
+    flex-direction: row;
+  }
+  
+  .talento-avatar {
+    min-width: 220px;
   }
 }
 

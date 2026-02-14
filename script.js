@@ -68,6 +68,6 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observar elementos (Avisos, Documentos, Regras)
-document.querySelectorAll('.aviso-card, .doc-card, .rule').forEach(el => {
+document.querySelectorAll('.aviso-card, .doc-card, .rule, .talento-card, .phone-card').forEach(el => {
   observer.observe(el);
 });
