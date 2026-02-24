@@ -22,9 +22,9 @@
       <a href="#inicio">Início</a>
       <a href="#avisos">Avisos</a>
       <a href="#documentos">Documentos</a>
-      <a href="#talentos">Talentos</a>
       <a href="#telefones">Telefones</a>
       <a href="#regras">Regras</a>
+      <a href="#indicacoes">Indicações</a>
       <a href="#contato" class="btn-nav">Contato</a>
     </nav>
 
@@ -46,7 +46,22 @@
 <section class="section" id="avisos">
   <div class="container">
     <h2 class="section-title">Últimos Avisos</h2>
-    <div class="cards" id="avisos-container"></div>
+    <div class="cards" id="avisos-container">
+      <article class="aviso-card">
+        <h3>Novos avisos aparecerão aqui</h3>
+        <p>Fique atento às próximas atualizações do condomínio.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VÍDEO INFORMATIVO -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Informações Importantes</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/2YA8WDNqpDM" title="Vídeo Informativo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
 </section>
 
@@ -55,42 +70,9 @@
   <div class="container">
     <h2 class="section-title">Documentos</h2>
     <div class="doc-grid">
-<div class="doc-grid">
-  <a href="docs/convencao.pdf" class="doc-card" target="_blank">Convenção 2026</a>
-  <a href="docs/regimento.pdf" class="doc-card" target="_blank">Regimento Interno 2026</a>
-</div>
+      <a href="docs/convencao.pdf" class="doc-card" target="_blank">Convenção 2026</a>
+      <a href="docs/regimento.pdf" class="doc-card" target="_blank">Regimento Interno 2026</a>
       <!-- Insira seus novos documentos aqui -->
-    </div>
-  </div>
-</section>
-
-<!-- TALENTOS -->
-<section class="section" id="talentos">
-  <div class="container">
-    <h2 class="section-title">Valorize os Talentos do Nosso Condomínio</h2>
-    
-    <div class="talentos-intro">
-      <p><strong>Você sabia que dentro do nosso próprio condomínio existem profissionais incríveis prontos para oferecer seus serviços?</strong></p>
-      <p>Mais do que vizinhos, somos uma comunidade. Valorizar o trabalho dos moradores é fortalecer laços, incentivar o empreendedorismo local e criar uma rede de apoio baseada em confiança e proximidade. Quando contratamos um serviço de alguém que mora aqui, estamos investindo no crescimento de quem compartilha o mesmo espaço, a mesma rotina e o mesmo lar.</p>
-      <p>Além da praticidade, escolher um profissional do condomínio facilita o contato, o acompanhamento e a construção de relações mais próximas e transparentes. É uma forma simples e poderosa de fortalecer nossa comunidade.</p>
-    </div>
-
-    <div class="talentos-grid">
-      <article class="talento-card">
-        <div class="talento-avatar">
-          <span>MS</span>
-        </div>
-        <div class="talento-info">
-          <span class="talento-badge">Nutricionista e Personal Trainer</span>
-          <h3>Marcio Souza</h3>
-          <p>Profissional especializado em saúde, emagrecimento e qualidade de vida. Marcio oferece atendimento personalizado, com planos alimentares individualizados e treinos adaptados às necessidades de cada aluno.</p>
-          <ul class="talento-detalhes">
-            <li>📍 Atendimentos online e presenciais em Curitiba</li>
-            <li>💪 Foco em resultados sustentáveis e acompanhamento contínuo</li>
-          </ul>
-          <p class="talento-cta">Se você quer melhorar sua alimentação, ganhar mais energia ou iniciar uma rotina de treinos com orientação profissional, conte com um especialista que é também seu vizinho!</p>
-        </div>
-      </article>
     </div>
   </div>
 </section>
@@ -183,6 +165,154 @@
   </div>
 </section>
 
+<!-- INDICAÇÕES DE SERVIÇOS -->
+<section class="section" id="indicacoes">
+  <div class="container">
+    <h2 class="section-title">Banco de Serviços Indicados</h2>
+    
+    <div class="form-wrapper">
+      <div class="form-header">
+        <p>Indique profissionais de confiança para seus vizinhos.</p>
+        <div class="disclaimer-box">
+          ⚠️ <strong>Atenção:</strong> As informações cadastradas são de responsabilidade do morador que realiza a indicação. O condomínio não se responsabiliza pelos serviços prestados ou negociações realizadas.
+        </div>
+      </div>
+
+      <!-- Barra de Progresso -->
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <form id="indicationForm" action="https://formsubmit.co/marciosouzadev06@gmail.com" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="Nova Indicação de Serviço - Condomínio">
+        <input type="hidden" name="_template" value="table">
+        
+        <!-- SEÇÃO 1: Quem indica -->
+        <div class="form-step active">
+          <h3>1. Quem está indicando?</h3>
+          <div class="form-group">
+            <label for="nome_morador">Nome do morador *</label>
+            <input type="text" id="nome_morador" name="nome_morador" required placeholder="Seu nome completo">
+          </div>
+          <div class="form-group">
+            <label>Você já contratou este serviço? *</label>
+            <div class="radio-group">
+              <label><input type="radio" name="ja_contratou" value="Sim" required> Sim</label>
+              <label><input type="radio" name="ja_contratou" value="Não, apenas indicando"> Não, apenas estou indicando</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEÇÃO 2: Dados do Profissional -->
+        <div class="form-step">
+          <h3>2. Dados do Profissional ou Empresa</h3>
+          <div class="form-group">
+            <label for="nome_profissional">Nome do profissional ou Fantasia *</label>
+            <input type="text" id="nome_profissional" name="nome_profissional" required>
+          </div>
+          <div class="form-group">
+            <label for="razao_social">Razão Social (se houver)</label>
+            <input type="text" id="razao_social" name="razao_social">
+          </div>
+          <div class="form-group">
+            <label for="cpf_cnpj">CPF ou CNPJ</label>
+            <input type="text" id="cpf_cnpj" name="cpf_cnpj">
+          </div>
+        </div>
+
+        <!-- SEÇÃO 3: Tipo de Serviço -->
+        <div class="form-step">
+          <h3>3. Tipo de serviço prestado</h3>
+          <div class="form-group">
+            <label>Qual serviço foi realizado? *</label>
+            <div class="checkbox-grid">
+              <label><input type="checkbox" name="servico[]" value="Construção"> Construção</label>
+              <label><input type="checkbox" name="servico[]" value="Reforma"> Reforma</label>
+              <label><input type="checkbox" name="servico[]" value="Pintura"> Pintura</label>
+              <label><input type="checkbox" name="servico[]" value="Elétrica"> Elétrica</label>
+              <label><input type="checkbox" name="servico[]" value="Hidráulica"> Hidráulica</label>
+              <label><input type="checkbox" name="servico[]" value="Marcenaria"> Marcenaria</label>
+              <label><input type="checkbox" name="servico[]" value="Gesso/Drywall"> Gesso / Drywall</label>
+              <label><input type="checkbox" name="servico[]" value="Limpeza"> Limpeza pós-obra</label>
+              <label><input type="checkbox" name="servico[]" value="Jardinagem"> Jardinagem</label>
+              <label><input type="checkbox" name="servico[]" value="Ar-condicionado"> Ar-condicionado</label>
+              <label><input type="checkbox" name="servico[]" value="Tecnologia"> Internet / Tecnologia</label>
+              <label><input type="checkbox" name="servico[]" value="Reparos"> Pequenos reparos</label>
+            </div>
+            <input type="text" name="servico_outro" placeholder="Outros (especifique)" style="margin-top: 10px;">
+          </div>
+        </div>
+
+        <!-- SEÇÃO 4: Contato -->
+        <div class="form-step">
+          <h3>4. Contato do prestador</h3>
+          <div class="form-group">
+            <label for="contato_responsavel">Nome do responsável</label>
+            <input type="text" id="contato_responsavel" name="contato_responsavel">
+          </div>
+          <div class="form-group">
+            <label for="contato_telefone">Telefone / WhatsApp *</label>
+            <input type="tel" id="contato_telefone" name="contato_telefone" required>
+          </div>
+          <div class="form-group">
+            <label for="contato_email">E-mail</label>
+            <input type="email" id="contato_email" name="contato_email">
+          </div>
+          <div class="form-group">
+            <label for="contato_site">Site ou Rede Social</label>
+            <input type="text" id="contato_site" name="contato_site" placeholder="Instagram, Facebook, etc.">
+          </div>
+        </div>
+
+        <!-- SEÇÃO 5 & 6: Avaliação e Detalhes -->
+        <div class="form-step">
+          <h3>5. Avaliação e Detalhes</h3>
+          <div class="form-group">
+            <label>Como você avalia o serviço? (1 = Ruim, 5 = Excelente) *</label>
+            <div class="rating-group">
+              <label>1 <input type="radio" name="avaliacao" value="1"></label>
+              <label>2 <input type="radio" name="avaliacao" value="2"></label>
+              <label>3 <input type="radio" name="avaliacao" value="3"></label>
+              <label>4 <input type="radio" name="avaliacao" value="4"></label>
+              <label>5 <input type="radio" name="avaliacao" value="5" checked></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Cumpriu prazos? *</label>
+            <select name="cumpriu_prazos" required>
+              <option value="Sim">Sim</option>
+              <option value="Parcialmente">Parcialmente</option>
+              <option value="Não">Não</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="detalhes">Detalhes do serviço e Observações</label>
+            <textarea id="detalhes" name="detalhes" rows="4" placeholder="Descreva o que foi feito e sua experiência..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="foto_servico">Foto do serviço (Opcional)</label>
+            <input type="file" id="foto_servico" name="foto_servico" accept="image/*">
+          </div>
+          
+          <div class="form-group checkbox-confirm">
+            <label>
+              <input type="checkbox" name="declaracao" required>
+              Declaro que as informações são verdadeiras e esta é apenas uma indicação.
+            </label>
+          </div>
+        </div>
+
+        <!-- Botões de Navegação -->
+        <div class="form-nav">
+          <button type="button" id="prevBtn" class="btn-secondary" disabled>Voltar</button>
+          <button type="button" id="nextBtn" class="btn-primary">Próximo</button>
+          <button type="submit" id="submitBtn" class="btn-primary" style="display: none;">Enviar Indicação</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
 <!-- CONTATO -->
 <section class="section bg-light" id="contato">
   <div class="container contato-container">
@@ -204,6 +334,9 @@
     <p>© 2026 Condomínio Reserva Garibaldi • Todos os direitos reservados</p>
   </div>
 </footer>
+
+<!-- Botão Voltar ao Topo -->
+<button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
 
 <script src="script.js"></script>
 </body>
