@@ -20,14 +20,15 @@
 
     <nav class="nav" id="nav" aria-label="Navegação principal">
       <a href="#inicio">Início</a>
-      <a href="#avisos">Avisos</a>
-      <a href="#documentos">Documentos</a>
-      <a href="#telefones">Telefones</a>
       <a href="#regras">Regras</a>
+      <a href="#documentos">Documentos</a>
+      <a href="#avisos">Avisos</a>
       <a href="#indicacoes">Indicações</a>
+      <a href="#telefones">Telefones</a>
       <a href="#contato" class="btn-nav">Contato</a>
     </nav>
 
+    <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema escuro/claro">🌙</button>
     <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
   </div>
 </header>
@@ -44,25 +45,142 @@
   </div>
 </section>
 
-<!-- AVISOS -->
-<section class="section" id="avisos">
+<!-- REGRAS -->
+<section class="section" id="regras">
   <div class="container">
-    <h2 class="section-title">Últimos Avisos</h2>
-    <div class="cards" id="avisos-container">
-      <article class="aviso-card">
-        <h3>Novos avisos aparecerão aqui</h3>
-        <p>Fique atento às próximas atualizações do condomínio.</p>
-      </article>
-    </div>
-  </div>
-</section>
+    <h2 class="section-title">Vai iniciar uma obra?</h2>
+    <p class="section-subtitle">Confira as regras essenciais para garantir a tranquilidade e segurança de todos durante sua reforma.</p>
+    <div class="rules">
+      
+      <!-- Item 1: Procedimento de Obras (Expandido) -->
+      <div class="rule">
+        <details class="rule-details">
+          <summary class="rule-summary">
+            <span>🏗️ Procedimento para Início das Obras</span>
+          </summary>
+          <div class="rule-content">
+            <p><strong>Prezado(a) Condômino(a),</strong></p>
+            <p>A seguir veremos todas as etapas para início das obras no condomínio residencial Reserva Garibaldi. Todas as solicitações abaixo devem ser requisitadas e acompanhadas pelo proprietário do lote. Atente-se com as etapas para que sejam atendidas.</p>
+            
+            <div class="guide-section">
+              <h4>Etapas do Processo</h4>
+              <ul class="steps-list">
+                <li>Aprovação do projeto junto a Prefeitura Municipal de Curitiba</li>
+                <li>Solicitação ao condomínio para início das obras no lote</li>
+                <li>Carta de Autorização do Condomínio para início das obras</li>
+                <li>Passagem dos fios elétricos (Quadro de Energia ➝ Lote)</li>
+                <li>Solicitação da água na Sanepar-PR</li>
+                <li>Solicitação da energia na Copel-PR</li>
+                <li>Início das Obras</li>
+              </ul>
+            </div>
 
-<!-- VÍDEO INFORMATIVO -->
-<section class="section bg-light">
-  <div class="container">
-    <h2 class="section-title">Informações Importantes</h2>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/2YA8WDNqpDM" title="Vídeo Informativo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="guide-section">
+              <h4>1. Aprovação do projeto junto a Prefeitura</h4>
+              <p>Conforme cita na convenção do condomínio, Capítulo II – Artigo 6º, para construção nos lotes (unidades autônomas), os proprietários deverão providenciar as alterações na planta e a aprovação nos órgãos competentes de todos os projetos arquitetônico e complementares.</p>
+              <div class="info-box">
+                <small>Nota: É de total responsabilidade do proprietário todas as consultas, aprovações e registros junto aos Órgãos Públicos (Prefeitura, INSS, CREA, etc.) bem como o recolhimento de taxas.</small>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h4>2. Solicitação ao condomínio</h4>
+              <p>Para solicitar a autorização, envie um e-mail com os seguintes dados:</p>
+              <div class="email-box">
+                <p><strong>Para:</strong> residencialreservagaribaldi@gmail.com</p>
+                <p><strong>Assunto:</strong> AUTORIZAÇÃO PARA INÍCIO DE OBRA LOTE [Número]</p>
+                <p><strong>Anexos:</strong> Todos os documentos referentes à obra.</p>
+              </div>
+              <img src="img/email.png" alt="Exemplo de E-mail" class="guide-img">
+            </div>
+
+            <div class="guide-section">
+              <h4>3. Carta de Autorização</h4>
+              <p>Após o envio da solicitação, você receberá um documento onde o síndico responsável e o proprietário deverão assinar (eletronicamente ou a punho).</p>
+            </div>
+
+            <div class="guide-section">
+              <h4>4. Passagem dos fios elétricos</h4>
+              <p>Será necessário a passagem dos fios elétricos que vão do lote ao quadro de energia para que posteriormente a equipe da COPEL/PR faça a ligação.</p>
+              
+              <div class="info-box">
+                <strong>Localização dos Quadros de Energia:</strong>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                  <li><strong>QM-1 (Frente ao salão de festas):</strong> Lotes 1 a 12 e 53 a 60</li>
+                  <li><strong>QM-2 (Parquinho lado esquerdo):</strong> Lotes 13 a 23 e 44 a 51</li>
+                  <li><strong>QM-3 (Parquinho lado direito):</strong> Lotes 24 a 43</li>
+                </ul>
+              </div>
+              <img src="img/eletrica.png" alt="Planta Elétrica" class="guide-img">
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- Outros Itens (Placeholders) -->
+      <div class="rule">
+        <details class="rule-details">
+          <summary class="rule-summary">
+            <span>💧 Solicitação da água na Sanepar-PR</span>
+          </summary>
+          <div class="rule-content">
+            <p>Para solicitar a ligação da água do seu lote, recomendamos ir diretamente a uma unidade da Sanepar, pois as tentativas realizadas via meios online não foram bem-sucedidas.</p>
+            <p>Recomendamos também a instalação do relógio embutido (que fica dentro de uma caixa preta), a fim de trazer mais facilidade e proteção para o relógio.</p>
+            <div class="info-box">
+              <strong>⚠️ Atenção:</strong> Você precisará liberar na portaria a equipe de instalação e acompanhar a instalação.
+            </div>
+          </div>
+        </details>
+      </div>
+      <div class="rule">
+        <details class="rule-details">
+          <summary class="rule-summary"><span>⚡ Solicitação da energia na Copel-PR</span></summary>
+          <div class="rule-content">
+            <p>Para solicitar a ligação elétrica da Copel você precisará do protocolo registrado no condomínio.</p>
+            <div class="info-box">
+              <strong>⚠️ Atenção:</strong> Você precisará liberar na portaria a equipe de instalação e acompanhar a instalação.
+            </div>
+            <p><strong>Protocolo:</strong> 20235140696706</p>
+            <p><small>*OBS: Pode ser que o condomínio esteja registrado com a numeração 6705.</small></p>
+          </div>
+        </details>
+      </div>
+      <div class="rule">
+        <details class="rule-details">
+          <summary class="rule-summary"><span>📱 Portaria Remota – Orsegups</span></summary>
+          <div class="rule-content">
+            <div style="display: flex; justify-content: center; margin-bottom: 25px;">
+              <img src="img/orsegups.png" alt="Orsegups" style="max-height: 60px; object-fit: contain;">
+            </div>
+            
+            <ul class="steps-list">
+              <li>
+                <strong>Baixe o aplicativo:</strong> Faça o download do aplicativo Orsegups - Meu Condomínio ou Clique no botão correspondente ao sistema operacional do seu celular para baixar.
+                <div style="margin-top: 10px; display: flex; gap: 15px; align-items: center;">
+                  <a href="https://play.google.com/store/apps/details?id=br.com.orsegups.meucondominio&hl=pt_BR" target="_blank" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px; background: var(--bg-body); padding: 10px 16px; border-radius: 8px; border: 1px solid var(--border-color); transition: transform 0.2s;">
+                    <img src="img/andoid.png" alt="Android" style="height: 22px;"> <small style="font-weight: 600;">Google Play</small>
+                  </a>
+                  <a href="https://apps.apple.com/br/app/orsegups-meu-condom%C3%ADnio/id1183797385" target="_blank" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px; background: var(--bg-body); padding: 10px 16px; border-radius: 8px; border: 1px solid var(--border-color); transition: transform 0.2s;">
+                    <img src="img/apple.png" alt="Apple" style="height: 22px;"> <small style="font-weight: 600;">App Store</small>
+                  </a>
+                </div>
+              </li>
+              <li>Abra o aplicativo e clique em <strong>“QUERO ME CADASTRAR”</strong>.</li>
+              <li>Inicie o cadastro informando seu <strong>e-mail</strong> e clique em “Iniciar”.</li>
+              <li>Para encontrar seu portal, selecione <strong>“POR CEP”</strong> e informe os dados abaixo:<br>
+              <strong>CEP:</strong> 82 220-000 &nbsp;|&nbsp; <strong>Número:</strong> 6711</li>
+              <li>Aparecerá o <strong>Condomínio Reserva Garibaldi</strong>, basta clicar em “Continuar”.</li>
+              <li>Será solicitado seus dados, preencha todos os dados corretamente.</li>
+              <li>Ao finalizar, é <strong>obrigatório</strong> anexar o contrato assinado e um documento de identificação do proprietário para que seja validado o cadastro!</li>
+            </ul>
+
+            <div class="info-box">
+              <strong>📞 Dúvidas?</strong> Caso tenha qualquer dúvida durante o processo de cadastro, entrar em contato com o síndico.
+            </div>
+          </div>
+        </details>
+      </div>
+
     </div>
   </div>
 </section>
@@ -79,47 +197,25 @@
   </div>
 </section>
 
-<!-- TELEFONES ÚTEIS -->
-<section class="section bg-light" id="telefones">
+<!-- AVISOS -->
+<section class="section" id="avisos">
   <div class="container">
-    <h2 class="section-title">Telefones Úteis</h2>
-    
-    <div class="telefones-grid">
-      <!-- Emergências -->
-      <div class="phone-card emergency">
-        <h3>🚨 Emergências</h3>
-        <ul class="phone-list">
-          <li><span>SIATE (Ambulância/Bombeiros)</span> <strong>193</strong></li>
-          <li><span>SAMU</span> <strong>192</strong></li>
-          <li><span>Polícia Militar</span> <strong>190</strong></li>
-          <li><span>Polícia Civil</span> <strong>197</strong></li>
-          <li><span>Guarda Municipal</span> <strong>153</strong></li>
-          <li><span>Defesa Civil</span> <strong>199</strong></li>
-          <li><span>SANEPAR (Água/Esgoto)</span> <strong>115</strong></li>
-          <li><span>COPEL (Energia)</span> <strong>0800 5100116</strong></li>
-          <li><span>SOS Criança</span> <strong>156</strong></li>
-          <li><span>SICRIDE (Crianças Desaparecidas)</span> <strong>(41) 3224-6822</strong></li>
-          <li><span>IML</span> <strong>(41) 3322-0909</strong></li>
-        </ul>
-      </div>
-    </div>
-    
-    <div style="text-align: center; margin-top: 20px;">
-      <small style="color: #6b7280;">Fonte: Prefeitura de Curitiba</small>
+    <h2 class="section-title">Últimos Avisos</h2>
+    <div class="cards" id="avisos-container">
+      <article class="aviso-card">
+        <h3> Em construção</h3>
+        <p>Estamos em construção.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- REGRAS -->
-<section class="section" id="regras">
+<!-- VÍDEO INFORMATIVO -->
+<section class="section bg-light">
   <div class="container">
-    <h2 class="section-title">Vai iniciar uma obra?</h2>
-    <p class="section-subtitle">Confira as regras essenciais para garantir a tranquilidade e segurança de todos durante sua reforma.</p>
-    <div class="rules">
-      <div class="rule"><span>Em construção</span></div>
-      <div class="rule"><span>Em construção</span></div>
-      <div class="rule"><span>Em construção</span></div>
-      <div class="rule"><span>Em construção</span></div>
+    <h2 class="section-title">Informações Importantes</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/2YA8WDNqpDM" title="Vídeo Informativo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 </section>
@@ -270,6 +366,37 @@
           <button type="submit" id="submitBtn" class="btn-primary" style="display: none;">Enviar Indicação</button>
         </div>
       </form>
+    </div>
+  </div>
+</section>
+
+<!-- TELEFONES ÚTEIS -->
+<section class="section bg-light" id="telefones">
+  <div class="container">
+    <h2 class="section-title">Telefones Úteis</h2>
+    
+    <div class="telefones-grid">
+      <!-- Emergências -->
+      <div class="phone-card emergency">
+        <h3>🚨 Emergências</h3>
+        <ul class="phone-list">
+          <li><span>SIATE (Ambulância/Bombeiros)</span> <strong>193</strong></li>
+          <li><span>SAMU</span> <strong>192</strong></li>
+          <li><span>Polícia Militar</span> <strong>190</strong></li>
+          <li><span>Polícia Civil</span> <strong>197</strong></li>
+          <li><span>Guarda Municipal</span> <strong>153</strong></li>
+          <li><span>Defesa Civil</span> <strong>199</strong></li>
+          <li><span>SANEPAR (Água/Esgoto)</span> <strong>115</strong></li>
+          <li><span>COPEL (Energia)</span> <strong>0800 5100116</strong></li>
+          <li><span>SOS Criança</span> <strong>156</strong></li>
+          <li><span>SICRIDE (Crianças Desaparecidas)</span> <strong>(41) 3224-6822</strong></li>
+          <li><span>IML</span> <strong>(41) 3322-0909</strong></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 20px;">
+      <small style="color: #6b7280;">Fonte: Prefeitura de Curitiba</small>
     </div>
   </div>
 </section>

@@ -1,3 +1,28 @@
+// DARK MODE TOGGLE
+const themeToggle = document.getElementById('theme-toggle');
+const html = document.documentElement;
+
+// Verificar preferência salva ou do sistema
+const savedTheme = localStorage.getItem('theme');
+const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+  html.setAttribute('data-theme', 'dark');
+  themeToggle.textContent = '☀️';
+} else {
+  html.setAttribute('data-theme', 'light');
+  themeToggle.textContent = '🌙';
+}
+
+themeToggle.addEventListener('click', () => {
+  const currentTheme = html.getAttribute('data-theme');
+  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  
+  html.setAttribute('data-theme', newTheme);
+  themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+  localStorage.setItem('theme', newTheme);
+});
+
 // MENU MOBILE
 const menuToggle = document.getElementById("menu-toggle");
 const nav = document.getElementById("nav");
